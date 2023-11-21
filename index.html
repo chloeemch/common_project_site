@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <script src="https://kit.fontawesome.com/654aeb4336.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <a href = "#main" id = "skip">Skip to Main Content</a>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link" id="pets">Home/Pets</a></li>
+            <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+            <li><a href="travel.html" class="nav-link">Travel</a></li>
+        </ul>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Browse Pets ▼</button>
+            <div id ="myDropdown" class="dropdown-content">
+                <a href="#cooper">Cooper</a>
+                <a href="#bacon">Bacon Q Dog</a>
+                <a href="#finn">Finn</a>
+                <a href="#milktea">Milktea</a>
+                <a href="#cheeto">Cheeto (Chicken)</a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if(!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i=0; i<dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if(openDropdown.classList.contains("show")) {
+                        openDropdown.classList.remove("show");
+                    }
+                }
+            }
+        }
+    </script>
+
+    <header>
+        <h1>Pets</h1>
+    </header>
+    
+    <main id = "main">
+        <div id="cooper">
+            <h2>Cooper</h2>
+            <img src ="images/cooper.jpeg" class = "thumbnail" alt="Border collie and lab mix laying his head on his stuffed animal toy" width="400">
+            <div class="container">
+                <div class="bio">
+                    <p>Cooper is an 8yr old border collie and lab mix. We rescued him from the Humane Society as a puppy! He loves going on long walks/runs, but he stops to sniff something every few steps. He’s pretty friendly, but he loves to loudly bark at delivery people who ring the doorbell.</p>            
+                    <p>Whenever it’s movie night, Cooper has to join on the couch/bed or he feels left out. He loves to cuddle and pats on his tummy. Cooper will play fetch for about 2 or 3 rounds, but he quickly gets bored. He leaves his toys all around the house for the rest of the family to find.</p>
+                </div>
+            
+                <div class = "likes">
+                    <h3>Likes</h3>
+                    <ul>
+                        <li>Peanut butter</li>
+                        <li>Going on long walks</li>
+                        <li>Sleeping</li>
+                    </ul> 
+                </div>  
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="photos">
+            <img src ="images/cooper_closeup.JPG" alt="Border collie / lab mix putting his face close to the camera" width="200">
+            <img src ="images/cooper_smiling.JPG" alt="Black and white colored dog smiling directly at the camera" width="200">
+            <img src ="images/cooper_flowers.jpeg" alt="Border collie / lab mix sniffing a bouquet of flowers in the sun" width="200">
+            <img src ="images/cooper_puppy.JPG" alt="Small border collie / lab mix puppy laying on the carpet" width="200">
+            
+            </div>
+
+            <!--Chloe Emch-->
+        </div>
+        
+        <div id="bacon">
+            <h2>Bacon Q Dog</h2>
+            <img src="images/bacon.jpg" class = "thumbnail" width = "400" alt="Brown labradoodle wearing colorful lei">
+
+            <div class="container">
+                <div class="bio">
+            <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.</p> 
+            <P>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride." There is also a lot of rolling. Lots and lots of rolling.</P>
+            </div>
+            
+            <div class="likes">
+            <h3>Likes</h3>
+            <ul>
+                <li>Belly rubs</li>
+                <li>Playing tug-of-war</li>
+                <li>Sneaking onto the couch</li>
+            </ul>
+            </div>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="photos">
+                <img src="images/bacon_bandana.JPG" width ="200" alt = "Brown labradoodle wearing an orange bandana">
+                <img src="images/bacon_graduation.JPG"  width ="200" alt="Small labradoodle puppy wearing a graduation cap and gown">
+                <video width="200"  controls>
+                    <source src="images/bacon_agility.mov">
+                    Your browser does not support the video tag.  This was a video of a girl and dog demonstrating a sit and stay procedure
+                </video>
+                <img src="images/bacon_halloween.JPG"  width ="200" alt="Brown labradoodle wearing a pirate costume">
+    
+            </div>
+
+            <!-- Colleen van Lent -->
+        </div>
+        
+        <div id="finn">
+            <h2> Finn </h2> 
+            <img src ="images/Finn_Halloween.jpg" class = "thumbnail" width = "400" alt = "Finn wears a bat costume for halloween"> 
+            
+            <div class="container">
+                <div class="bio">
+            <p>Finn is a 7 year old grey cat. I feel like no one really knows cat breeds so I’m just gonna go with grey. He loves doing tricks for treats and his favorite is giving high fives to people. He might as well be a dog as he loves the outdoors and meeting new people. I can only describe him as goofy and chaotic. </p>
+            <p>Finn’s biggest enemy is his vet. I don't know whether or not it’s because his vet is an MSU alum, but he doesn’t like him. He actually has to be prescribed a sedative before he goes to the vet office because he’ll suddenly act like he was never a house cat for 7 years.</p> 
+                </div>
+
+            <div class="likes">
+            <h3>Likes</h3>
+            <ul>
+                <li>Belly rubs</li>
+                <li>Head Rubs</li>
+                <li>Sleeping in cardboard boxes</li>
+            </ul>
+            </div>
+            </div>
+
+            <h3>Photo Gallery </h3>
+            <div class="photos">
+            <img src="images/Finn_Shlumped.jpg" width = "200" alt = "Finn is exhausted after a long day of doing absolutely nothing">
+            <img src="images/Finn_Kitten.jpg" width = "200" alt = "A few days after we adopted Finn. He’s just posing for the camera">
+            <video width = "200" controls> 
+
+                    <source src="images/Finn_jumpscare.mov">
+            </video>
+            <img src="images/Finn_GOAT.jpg" width = "200" alt = "Finn dressed up as the king he is for Halloween ">
+            
+            </div>
+            
+            <!-- Lauren Rodriguez -->
+        </div>
+
+        <div id="milktea">
+            <h2>Milktea</h2>
+            <img src="images/Main.JPG" class = "thumbnail" width="400" alt= "Milktea taking nap">
+            
+            <div class="container">
+                <div class="bio">
+                <p>Milktea is a Scottish fold with a personality of a princess. She loves her veggies and refuses to eat anything dropped on the ground. She makes it clear when she has a demand of any sort by complaining in a loud, distinguished manner. If what she says could be translated, it probably would be, “This is atrocious, the water container has been empty for the 3rd time this week. I want to see the manager.”</p>
+                <p>Despite her cuteness and royalty, she actually suffers from a genetic disorder intentionally brought upon by humans. I highly advise against keeping a Scottish fold because they are in constant pain when they reach around 2 years old. Cartilage accumulates around her paw joints and tail joints and it becomes painful for them to even walk. She is living evidence of human’s cruelty of breeding animals to look pretty while sacrificing the animals’ health.  </p>
+                </div>
+
+            <div class="likes">
+            <h3>Likes</h3>
+            <ul>
+                <li>Corn kernels</li>
+                <li>Sitting royally on suitcases</li>
+                <li>Soft surfaces</li>
+            </ul>
+            </div>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="photos">
+            <img src="images/Milktea_comfy.jpg" width="200" alt="Milktea enjoying a good massage">
+            <img src="images/Milktea_laptop.jpg" width="200" alt="Baby Milktea On Laptop">
+            <img src="images/Milktea_mirror.jpeg" width="200" alt="Milktea sighting at mirror">
+            <img src="images/Milktea_catbox.jpg" width="200" alt="Milktea Catbox position">
+            
+            </div>
+
+            <!--Olive Ren-->
+        </div>
+
+        <div id="cheeto"> <!--Pet #2-->
+            <h2>Cheeto (Chicken)</h2>
+            <img src="images/cheeto_cattree.jpg" class = "thumbnail" width="400" alt= "Orange cat hanging paws off a cat tower">
+            
+            <div class="container">
+                <div class="bio">
+            <p>Cheeto is a cat who likes to eat a lot and play a lot. He has an obsession with his grandpa (human) and tries to get outside every single day. If he isn’t causing problems, he is usually hiding in a seven foot tall cat tree and sleeping.</p>
+            <p>Another name for Cheeto is Chicken, because sometimes he sits very scrunched up and ends up looking like a rotisserie chicken. He was nicknamed this by one of his friends, and now he understands it as his own name. He is about six years old and still acts like a younger cat, despite being middle-aged.</p>
+                </div>
+
+            <div class="likes">
+            <h3>Likes</h3>
+            <ul>
+                <li>Treats</li>
+                <li>Exploring</li>
+                <li>My Dad</li>
+            </ul>
+            </div>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="photos">
+            <img src="images/cheeto_carpet.jpg" width="200" alt="Cheeto laying sideways on the carpet">
+            <img src="images/cheeto_moon.jpg" width="200" alt="Cheeto lying in the sun in a half moon crescent shape">
+            <img src="images/cheeto_boxes.jpg" width="200" alt="Cheeto lying on boxes with one leg hanging off.">
+            <img src="images/cheeto_attack.jpg" width="200" alt="Cheeto attacking a hand trying to pet him.">
+            
+            </div>
+
+            <!--Divya Shankar-->
+        </div>
+
+    </main>
+    <footer>
+        <i class="fa-solid fa-paw fa-beat"></i>
+        <h3>Interactive Quiz</h3>
+    
+            <div id="quiz-container">
+                <p id="question"></p>
+                <div id="options-container"></div>
+            </div>
+        
+            <script src="quiz.js"></script>
+    </footer>
+
+</body>
+
+</html>

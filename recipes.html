@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <script src="https://kit.fontawesome.com/654aeb4336.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <a href = "#main" id = "skip">Skip to Main Content</a>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home/Pets</a></li>
+            <li><a href="recipes.html" class="nav-link" id="recipes">Recipes</a></li>
+            <li><a href="travel.html" class="nav-link">Travel</a></li>
+        </ul>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Browse Recipes ▼</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#matcha">Matcha Cookies</a>
+                <a href="#cookies">Double Chocolate Cookies</a>
+                <a href="#shrimp">Shrimp Scampi</a>
+            </div>
+        </div>
+        
+    </nav>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if(!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i=0; i<dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if(openDropdown.classList.contains("show")) {
+                        openDropdown.classList.remove("show");
+                    }
+                }
+            }
+        }
+    </script>
+
+    <header>
+        <h1>Recipes</h1>
+    </header>
+
+    <main id = "main">
+        <div id="matcha">
+            <h2>Matcha Cookies</h2>
+            <span>Origin: Japanese</span>
+            <span>Source: https://www.justonecookbook.com/green-tea-white-chocolate-cookies/</span>
+            <span>Category: Dessert</span>
+        <div class="grid">
+            <div class="image">
+            <img src="images/Matcha-Cookies.jpeg" width="400" alt="">
+            </div>
+            <div class="paragraph">
+            <p>
+                These cookies have the perfect flavor balance of the earthiness from the matcha and the sweetness and
+                creaminess from
+                the white chocolate chips. They are crispy and sweet, perfect for an afternoon snack or dessert. Enjoy with
+                a cup of
+                tea!
+            </p>
+            </div>
+
+            <div class="ingredients">
+            <h3>Recipe Ingredients</h3>
+            <ul>
+                <li>All purpose flour</li>
+                <li>Matcha powder</li>
+                <li>Unsalted butter</li>
+                <li>Kosher salt</li>
+                <li>Confectioners sugar</li>
+                <li>Egg yolks</li>
+                <li>White chocolate chips</li>
+            </ul>
+            </div>
+
+            <div class="steps">
+            <!-- Cmd + Shift + P -->
+            <h3>Recipe Steps</h3>
+            <ol type="1">
+                <li>Combine flour and matcha powder in large bowl</li>
+                <li>Sift the flour and matcha powder</li>
+                <li>Beat softened butter until smooth and creamy</li>
+                <li>Add salt and blend</li>
+                <li>Add sugar and beat until soft and light</li>
+                <li>Add egg yolks and mix until well combined</li>
+                <li>Gradually add flour and matcha mixture and mix until well combined</li>
+                <li>Add chocolate chips and mix until incorporated</li>
+                <li>Divide dough into two pieces. Shape each piece into cylinders about 1.5in in diameter</li>
+                <li>Wrap logs in plastic wrap and chill in fridge for at least two hours</li>
+                <li>Slice into ⅓ inch rounds and place on a baking tray lined with parchment paper</li>
+                <li>Bake at 350 degrees for 15 minutes</li>
+            </ol>
+            </div>
+        </div>
+            
+            <h3>Additional Food images</h3>
+            <div class="imgs">
+            <img src="images/Cookies-on-tray.jpeg" width="200" alt="Close up of matcha cookies on baking tray">
+            <img src="images/Matcha-and-flour.jpeg" width="200" alt="Matcha and flour sifted into a bowl">
+            <img src="images/cookie-dough.jpeg" width="200" alt="Raw matcha cookie dough shaped into a cylinder">
+            </div>
+            <!-- Emily Ma -->
+        </div>
+
+        <div id="cookies">
+            <h2>Double Chocolate Cookies</h2>
+            <span>Origin: Michigan</span>
+            <span>Source: Family Recipe</span>
+            <span>Category: Dessert</span>
+
+            <div class="grid">
+                <div class="image">
+            <img src="images/double_chocolate_cookies.png" width = "400" alt="">
+            </div>
+            <div class="paragraph">
+            <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste buds of her siblings.  They are extremely sugary so the salt helps to balance it.  Note, these cookies are best eaten very quickly.</p>
+            </div>
+
+            <div class="ingredients">
+            <h3>Recipe Ingredients</h3>
+            <ul>
+                <li>Unsalted butter</li>
+                <li>Granulated Sugar</li>
+                <li>Packed light or dark brown sugar</li>
+                <li>Large egg</li>
+                <li>Pure vanilla extract</li>
+                <li>Semi-sweet chocolate chunks (melted)</li>
+                <li>All-purpose flour</li>
+                <li>Natural unsweetened cocoa powder</li>
+                <li>Baking soda</li>
+                <li>Salt</li>
+                <li>Semi-sweet chocolate chunks</li>
+            </ul>
+            </div>
+
+            <div class="steps">
+            <h3>Recipe Steps</h3> 
+            <ol>
+                <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
+                <li>Add the egg and vanilla extract and beat well</li>
+                <li>Add the melted chocolate</li>
+                <li>In a separate bowl combine the flour, baking soda, cocoa powder and salt</li>
+                <li>Combine the wet and dry ingredients</li>
+                <li>Add the unmelted chocolate chunks.</li> 
+                <li>Form 15 cookies and place on a baking sheet.</li>
+                <li>Cook for 12 to 13 minutes at 350 degrees.</li>
+            </ol>
+            </div>
+            </div>
+
+            <h3>Additional Food images</h3>
+            <div class="imgs">
+            <img src="images/double_chocolate_chips.png" width = "200" alt="A small pile of chocolate chips">
+            <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545" width = "200" alt="Chocolate melting in a boiler">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG" width = "200" alt="Brown sugar in three different shades of darkness">
+            </div>
+            <!-- Colleen van Lent -->
+            </div>
+
+        <div id="shrimp">
+            <h2>Shrimp Scampi</h2>
+            <span>Origin: Italy</span>
+            <span>Source: Family Recipe</span>
+            <span>Category: Dinner</span>
+
+            <div class="grid">
+            <img src="images/shrimp_scampi.jpg" alt ="Plate of shrimp scampi garnished with a sprinkle of parsley.">
+            <div class="paragraph">
+                <p>
+                    This recipe for shrimp scampi is easy and very tasty. The seafood mixed with the butter and garlic creates a perfect combination of flavors. This pasta is light and bursting with flavor.
+                </p>
+            </div>
+            
+            <div class="ingredients">
+            <h3> Recipe Ingredients </h3>
+            <ul>
+                <li>2 tablespoons butter</li>
+                <li>2 tablespoons extra-virgin olive oil</li>
+                <li>4 garlic cloves, minced</li>
+                <li>½ cup dry white wine or broth</li>
+                <li>¾ teaspoon kosher salt, or to taste</li>
+                <li>⅛ teaspoon crushed red pepper flakes, or to taste</li>
+                <li>Freshly ground black pepper</li>
+                <li>1¾ pounds large or extra-large shrimp, shelled</li>
+                <li>⅓ cup chopped parsley</li>
+                <li>Freshly squeezed juice of half a lemon</li>
+                <li>Cooked pasta or crusty bread</li>
+            </ul>
+            </div>
+
+            <div class="steps">
+            <h3> Recipe Steps </h3>
+            <ol>
+                <li> In a large skillet, melt butter with olive oil.</li>
+                <li> Add garlic and sauté until fragrant, about 1 minute. </li>
+                <li> Add wine or broth, salt, red pepper flakes and plenty of black pepper and bring to a simmer.</li>
+                <li> Let the wine reduce by half, about 2 minutes. </li>
+                <li> Add shrimp and sauté until they just turn pink, 2 to 4 minutes depending upon their size. </li>
+                <li> Stir in the parsley and lemon juice and serve over pasta or accompanied by crusty bread. </li>
+            </ol>  
+            </div>
+            </div>
+
+            <h3>Additional Food images</h3> 
+            <div class="imgs">
+            <img src="images/shrimp_cooking.jpg" alt ="Shrimp is cooking until it is pink. Shrimp is almost finished cooking.">
+            <img src="images/shrimp_scampi_cooking.jpg" alt ="Shrimp cooking in a sauce of butter and wine. It is being stirred with a spoon.">
+            <img src="images/pasta_cooking.jpg" alt ="Pasta being lifted by a fork in a pot of boiling water. It is almost finished cooking.">
+            </div>
+            <!-- Anna Torell -->
+        </div>
+
+    </main>
+    <footer>
+        <i class="fa-solid fa-utensils fa-beat"></i>
+
+        <h3>Interactive Quiz</h3>
+    
+            <div id="quiz-container">
+                <p id="question"></p>
+                <div id="options-container"></div>
+            </div>
+        
+            <script src="recipequiz.js"></script>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <script src="https://kit.fontawesome.com/654aeb4336.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <a href = "#main" id = "skip">Skip to Main Content</a>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home/Pets</a></li>
+            <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+            <li><a href="travel.html" class="nav-link" id="travel">Travel</a></li>
+        </ul>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Browse Locations ▼</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#banff">Banff</a>
+                <a href="#barcelona">Barcelona</a>
+                <a href="#Nanjing Fuzi-Qinhuai">Nanjing Fuzi-Qinhuai</a>
+                <a href="#yellowstone">Yellowstone</a>
+                <a href="#jungfrau">Jungfrau</a>
+                <a href="#ari">Ari Atoll</a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if(!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i=0; i<dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if(openDropdown.classList.contains("show")) {
+                        openDropdown.classList.remove("show");
+                    }
+                }
+            }
+        }
+    </script>
+
+    <header>
+        <h1>Travel</h1>
+    </header>
+    
+    <main id = "main">
+        <div id="banff">
+            <h2>Banff</h2>
+            <h3>Geographical location: North America</h3>
+            <div class="imggif">
+            <img src="images/banff.jpg" width = "400" alt = "Beautiful lake at Banff">
+            <img src = "images/banff.gif" class = "animated-gif" width = "400" alt = "GIF of a lake at Banff National Park">
+            </div>
+            
+            <div class="info">
+            <p>Banff is Canada’s first national park. The park spans 2,564 square miles. Here you can see the Rocky Mountain peaks and beautiful turquoise glacial lakes.</p>
+            <p>In addition to the magnificent nature of Banff, there are many things to explore in the downtown area. Banff Avenue and Bear Street have many stores to enjoy shopping. You can also learn of the natural and cultural history by visiting many museums and historical sites.</p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="pics">
+            <img src ="images/banff_lake_summer.jpg" width= "200" alt = "Lake at Banff in summer">
+            <img src ="images/banff_town.jpg" width = "200" alt = "Banff downtown">
+            <img src ="images/banff_winter.jpg" width = "200" alt = "Beautiful Banff in winter">
+            <img src ="images/moraine_lake_banff.jpg" width = "200" alt = "Moraine lake at Banff">
+            </div>
+            
+            <div class="lastpic">
+            <img src ="images/canoeing_in_banff.jpg" width = "200" alt = "Canoeing in Banff">
+            </div>
+
+            <!-- Abby Lee -->
+        </div>
+    
+        <div id="barcelona" class="location">
+            <h2>Barcelona, Spain</h2>
+            <img src="images/barcelona.jpeg" width="400"
+            alt="Birds-eye view of the city of barcelona during the day">
+            
+            <div class="info">
+            <p>Barcelona, is a beautiful city on the Northeastern coast of Spain that is the byproduct of a rich and artistic history with modern infrastructure. One of the main attractions of the city is its gorgeous architecture, often the work of world renowned architects such as Antoni Gaudi. Some of the most notable works are the modern Basilica of La Sagrada Familia, and the tranquil and eloquent Park Güell.</p>
+            <p>Much of Barcelona’s charm comes down to local culture, from diverse culinary offerings, to the sunny vacation-ridden atmosphere of the beaches, and even the symbolism of nationalism and independence that Barcelona residents display. The passion of the locals is unwavering, including in famous soccer matches by one of the sports greatest clubs: F.C. Barcelona, and in numerous local artistry events. It is no wonder why many travelers to Spain feel rejuvenated and fortunate enough to have experienced the city’s irresistibly strong culture and atmosphere.</p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="pics">
+            <figure> 
+                <img src="images/park_guell.jpeg" alt="View from bench seating above park" width="200">
+                <figcaption>The view from Park Güell</figcaption>
+            </figure> 
+            <figure> 
+                <img src="images/camp-nou.jpeg" alt="View of an FC Barcelona match from the Camp Nou" width="200">
+                <figcaption>Barcelona fans demonstrate their passion from the Camp Nou</figcaption>
+            </figure> 
+            <figure> 
+                <img src="images/beach_barcelona.jpeg" alt="Beach on the northeastern coast of spain" width="200">
+                <figcaption>A popular strip on Barcelona’s most famous beach</figcaption>
+            </figure> 
+            <figure> 
+                <img src="images/sagrada_familia.jpeg" alt="La Sagrada Familia, a famous church, shot in daylight" width="200">
+                <figcaption>Modern structure with vintage architecture at La Sagrada Familia</figcaption>
+            </figure> 
+            </div>
+            
+            <div class="lastpic">
+            <figure>
+            <img src="images/barcelona_skyline.jpeg" alt="The Barcelona city skyline at night" width="200">
+            <figcaption>Nighttime view of the contrast between modern and classical Barcelona</figcaption>
+            </figure>
+
+            </div>
+
+            <!-- Jean Gamboa Fuentes -->
+        </div>
+        
+        <div id="Nanjing Fuzi-Qinhuai">
+            <h2>  Nanjing Fuzi-Qinhuai </h2>
+            
+            <div class="imggif">
+            <img class="animated-gif" src="images/nanjing.gif" width = 400 alt = "qinhuai river git at night"> 
+            <img src = "images/qinhuai.JPG" width = 400 alt = "qinhuai river photo at night">
+            </div>
+            
+            <div class="info">
+            <p>Nanjing is a popular city full of Chinese history and old traditional southern kinds of agriculture. As a northern people from China, Nanjing was the first city that I traveled to the region south of the Yangtze River. Confucius Temple - Qinhuai River is the most famous place to show the beauty of Nanjing.</p>
+            <p>Confucius temple has many traditional temple agricultures inside and many small shops about traditional Nanjing specialties and popular restaurants. There are also many colorful traditional lanterns which made the night of qinhuai more gorgeous. People can also take the “Hua Fang” ( a special kind of ship) to travel around the river and the whole scenery.  </p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="pics">
+            <figure> 
+                <img src = "images/nj_dragon.JPG"  width = 200 alt = "Two dragons playing with beads carved on the dragon wall of a traditional Chinese building"> 
+                <figcaption> Taken in the evening on the other side of the Qinhuai River. </figcaption>
+            </figure>
+            <figure> 
+                <img src = "images/nj_huafang.JPG"  width = 200 alt = "The Huafang ship of Qinhuai River for visitors"> 
+                <figcaption> At About 7 pm at night when the lights and lanterns turn on.</figcaption>
+            </figure>
+            <figure> 
+                <img src = "images/nj_lantern.JPG"  width = 200 alt = "Various of beautiful hand-made lanterns for blessing"> 
+                <figcaption>  Inside the Jiangnan Examination Hall at night.</figcaption>
+            </figure>
+            <figure>
+                <img src = "images/nj_qhriver.JPG"  width = 200 alt = "The ancient building corridor on both sides of the Qinhuai River">
+                <figcaption>  At night stand on the side of the corridor.</figcaption>
+            </figure>
+            </div>
+            
+            <div class="lastpic">
+            <figure> 
+                <img src = "images/nj_temple.JPG"  width = 200 alt = "The temple  people burn incense and pray for success in the exam"> 
+                <figcaption> Upward view at night inside the Jiangnan Examination Hall. </figcaption>
+            </figure>
+
+            </div>
+
+            <!--Sophy Ji-->
+        </div>
+
+        <div id="yellowstone">
+            <h2>Yellowstone</h2>
+            <h3>Geographical Location: North America</h3>
+            <div class="imggif">
+            <img class="animated-gif" src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
+            <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
+            </div>
+
+            <div class="info">
+            <p>Yellowstone is the first national park in the United States. It covers over 2.2 million acres, and provides an opportunity to see wildlife and explore geothermal areas.  In fact, Yellowstone contains about half the world's active geysers.</p>
+            <p>These unique opportunities also bring out a lot of bad decisions among the tourists.  Every year visitors injure themselves or the wildlife by getting close to the animals.  You  can see examples of people making bad decisions by visiting <a href ="https://www.facebook.com/groups/yellowstonenationalparkinvasionoftheidiots/">Yellowstone National Park: Invasion of the Idiots</a>, <a href="https://www.instagram.com/touronsofyellowstone/?hl=en">Tourons of Yellowstone</a>, or  <a href="https://cowboystatedaily.com/">Cowboy State Daily</a>.</p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="pics">
+            <figure>
+                <img src="images/yellowstone_travertine.JPG" width = "200" alt="A large mound of multi-colored travertine">
+                <figcaption>Mammoth Hot Springs</figcaption>
+                <!--  has a number of actively forming Travertine terraces. -->
+            </figure>
+
+            <figure>
+                <img src="images/yellowstone_sunset.jpg" width = "200" alt="Sunset over mountains with some charred trees in the foreground">
+                <figcaption>View of Lamar Valley</figcaption>
+                <!-- The drive to Lamar Valley requires some dangerous roads.  But the result is amazing sunset views. -->
+            </figure>
+
+            <figure>
+                <img src="images/yellowstone_sulphur_springs.JPG" width = "200" alt="A large spring with clouds of sulfur smoke rising from it.">
+                
+                <figcaption>If you can handle the odor, the Yellowstone Sulphur Springs is a great place to hike.</figcaption>
+            </figure>
+
+            <figure>
+                <video width="200"  controls>
+                    <source src="images/yellowstone_buffalo.MOV">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Buffalo along the roads in Yellowstone</figcaption>
+                <!-- The buffalo were so common along the roads in Yellowstone that our mantra became "If it ain't lickin the car, we aren't stopping." -->
+            </figure>
+
+            </div>
+            <div class="lastpic">
+                <figure>
+                    <video width="200"  controls>
+                        <source src="images/yellowstone_prism.MOV">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>The multicolored layers come from different species of bacteria.</figcaption>
+                    <!-- The multicolored layers get their hues from different species of bacteria living in the cooler water around the spring. -->
+                </figure>
+    
+            </div>
+            <!-- Colleen van Lent -->
+        </div>
+
+        <div id="jungfrau">
+            <h2>Jungfrau, Switzerland</h2>
+            <h3>Geographical Location: Europe</h3>
+            <div class="imggif">
+            <img class="animated-gif" src=images/jungfrau-helicopter.gif width="400" height="300" alt="Helicoper in Jungfrau.">
+            <img src=images/jungfrau-summit.jpeg width = "400" height="300" alt="Top of jungfrau">
+            </div>
+
+            <div class="info">
+            <p>Jungfrau is a city in Switzerland known for its mountain summits nicknamed the “top of Europe.” It is very famous also for its railway created in 1912 that can bring you to a height of 3454m. At the summit there are outstanding views where you can see the whole city and beyond.</p>
+            <p>The scenery consists of valleys, waterfalls, rock walls, and snow peaks. When visiting, it is vital to go on a day with good weather because it enhances the quality of the views. Hiking is very popular at short trails called Grutschalp and Murren. A very common tourist attraction is also exploring the Lauterbrunnen valley.</p>
+            </div>
+
+            <h3>Photo Gallery</h3>
+            <div class="pics">
+            <figure>
+                <img src=images/jungfrau_summit_building.jpg width = "200" alt="Tourists can take the train and elevator up to that building on summit">
+                <figcaption>Jungfrau building summit</figcaption>
+            </figure>
+
+            <figure>
+                <img src=images/jungfrau_train.jpg width = "200" alt="Train on railway that takes you to the top of the summit">
+                <figcaption>Jungfrau train</figcaption>
+            </figure>
+
+            <figure>
+                <img src=images/jungfrau_lodging.jpg width = "200" alt="Houses located in Jungfrau for people to stay at">
+                <figcaption>Lodging in Jungfrau</figcaption>
+            </figure>
+
+            <figure>
+                <img src=images/jungfrau_water.jpg width = "200" alt="Body of water located in Jungfrau fun for swimming">
+                <figcaption>Lake in Jungfrau</figcaption>
+            </figure>
+
+            </div>
+            <div class="lastpic">
+            <figure>
+                <img src=images/jungfrau_lookout.jpg width = "200" alt="Tourists can go to the spot to look out over the country">
+                <figcaption>Lookout point at Jungfrau</figcaption>
+            </figure>
+            
+            </div>
+        
+            <!-- Daniel Saltzman -->
+        </div>
+
+        <div id="ari">
+            <h2>Ari Atoll, Maldives</h2>
+            <h3>Geographical Location: Asia</h3>
+            <div class="imggif">
+            <img class="animated-gif" src="images/maldives.gif" width="400" alt="hammock swinging in beach">
+            <img src="images/maldives_aerial.jpeg" width="400" alt="aerial view of houses on water">
+            </div>
+
+            <div class="info">
+            <p>Maldives is an archipelagic state and country in South Asia, situated in the Indian Ocean. It lies southwest of Sri Lanka and India, about 750 kilometres (470 miles; 400 nautical miles) from the Asian continent's mainland. The Maldives' chain of 26 atolls stretches across the equator from Ihavandhippolhu Atoll in the north to Addu Atoll in the south.</p>
+            <p>Maldives offers such an incredible combination of dazzling beaches, cerulean waters and fantastic diving that its opening up to travelers without limitless financial resources is definitely a cause for celebration.</p>
+            </div>
+
+            <h3>Photo Gallery </h3>
+            <div class="pics">
+            <figure>
+                <img src="images/maldives_hotel.jpeg" width = "200" alt="A maldives hotel with multiple suites lined up on the right and a central boardwalk">    
+                <figcaption>One of several maldivian hotels, all built right over the ocean.</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/maldives_diving.jpeg" width = "200" alt="A scuba diver diving in the Maldives along a vibrant reef">
+                <figcaption>Exploring the gorgeous reefs of Maldives</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/maldives_restaurant.jpeg" width = "200" alt="Interior of a luxury dining restaurant in Maldives overlooking the ocean">
+                <figcaption>Maldives offers wonderful dining experience</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/maldives_hammock.webp" width = "200" alt="A hammock on the beach besides the clear blue waters of Maldives">
+                <figcaption>Lazy days on the beach</figcaption>
+            </figure>
+            </div>
+
+            <div class="lastpic">
+            <figure>
+                <img src="images/maldives_glowing.jpeg" width = "200" alt="The bioluminescent glowing beach of Maldives where the waters glow blue">
+                <figcaption>Biological splendors on the island shores</figcaption>
+            </figure>
+            
+            </div>
+
+            <!-- Aditya Kaushal -->
+        </div>
+
+    </main>
+    <footer>
+        <i class="fa-solid fa-plane fa-beat"></i>
+
+        <h3>Interactive Quiz</h3>
+    
+            <div id="quiz-container">
+                <p id="question"></p>
+                <div id="options-container"></div>
+            </div>
+        
+            <script src="travelquiz.js"></script>
+    </footer>
+
+</body>
+</html>
